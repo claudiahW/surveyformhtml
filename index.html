@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hiker Gang Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <h1 id="title">HIKER GANG HIKING TEAMS</h1>
 
     <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora laudantium saepe quia. Quisquam blanditiis doloribus id excepturi, libero qui iste!</p>
 
-    <form id="survey-form" action="" method="get"> 
+    <form id="survey-form" action="" method="post" autocomplete="on" target="_self"> 
 
     <label for="fname">First Name: </label><br>
         <input id="fname" type="text" x placeholder="e.g. John" name="fname" required>
@@ -20,21 +21,20 @@
         <input id="lname" type="text" x placeholder="e.g. Doe" name="lname" required>
     <br>
     <br>
-    <label for="email-label">Email:</label>
-         <input id="email-label" type="email" required placeholder="johndoe@email.com">
+    <label for="email">Enter your email:</label>
+         <input id="email" type="email" name="email" required placeholder="johndoe@email.com">
     
     <br>
     <br>
-    <label for="age-label">What is your age? 
-         <input id="age-label" type="number" max="75" min="15" placeholder="18">
-    </label>
+    <label for="age">What is your age? </label>
+         <input id="age" type="number" name="age" max="75" min="15" placeholder="18">
+    
+   <br>
+   <br>
+    <label for="budget">What budget range would best suit you?</label>
     <br>
     <br>
-    <label for="budget">
-        What budget range would best suit you?
-        <br>
-        <br>
-        <select id="dropdown"> 
+       <select id="budget" name="budget"> 
             <option>Please select one</option>
             <option>2000 - 5000</option>
             <option>5000-10000</option>
@@ -43,7 +43,7 @@
             <option>25000-60000</option>
         </select>
 
-</label>
+
 
 <h3>Do you prefer day trips or Overnight trips?</h3>
     
@@ -75,20 +75,23 @@
         <input type="checkbox" id="safari" name="activities" value="Safari" > 
         <label for="safari">Safari</label>
         <br>
-        <input type="checkbox" id="safari" name="activities"
+        <input type="checkbox" id="csr" name="activities"
         value="CSR" > 
         <label for="csr">CSR</label>
         <br>
         <input type="checkbox" id="marathons" name="activities"
-        value="marathons" > 
+        value="Marathons" > 
         <label for="marathons">Marathons</label>
         <br>
         <br>
 </label>
-<textarea></textarea>
+<h3>Any Suggestions or recommendations?</h3>
+<textarea cols="50" rows="15"></textarea>
 <br>
 <br>
 <input type="submit" value="Submit">
+<input type="reset" value="Reset" >
     </form>
+    
 </body>
 </html>
