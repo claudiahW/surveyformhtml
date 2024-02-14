@@ -7,17 +7,22 @@
 </head>
 <body>
     <h1 id="title">HIKER GANG HIKING TEAMS</h1>
+
     <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora laudantium saepe quia. Quisquam blanditiis doloribus id excepturi, libero qui iste!</p>
 
     <form id="survey-form" action=""> 
-    <label for="name-label">Fullname: 
-        <input id="name-label" type="text" required placeholder="e.g. John Doe">
-    </label>
+
+    <label for="fname">First Name: </label><br>
+        <input id="fname" type="text" x placeholder="e.g. John" name="fname" required>
     <br>
     <br>
-    <label for="email-label">Email: 
+    <label for="lname">Last Name: </label>
+        <input id="lname" type="text" x placeholder="e.g. Doe" name="lname" required>
+    <br>
+    <br>
+    <label for="email-label">Email:</label>
          <input id="email-label" type="email" required placeholder="johndoe@email.com">
-    </label>
+    
     <br>
     <br>
     <label for="age-label">What is your age? 
@@ -39,21 +44,23 @@
         </select>
 
 </label>
+
+<h3>Do you prefer day trips or Overnight trips?</h3>
+    
+<input type="radio" id="day" name="daynight" value="Day trips">
+<label for="day">Day trips</label> 
 <br>
+<input type="radio" id="night" name="daynight" value="Night trips"> <label for="night">Night trips</label> 
+
+
+<h3>Do you prefer Backpacking or Scheduled trips?</h3>
+    
+<input type="radio" id="backpacking" name="triptype" value="Backpacking"> 
+<label for="backpacking" >Backpacking</label>
 <br>
-<label for="">Do you prefer day trips or Overnight trips?
-    <br>
-<input type="radio" name="daynight"> Day trips
-<br>
-<input type="radio" name="daynight"> Night trips
-</label>
-<br><br>
-<label for="">Do you prefer Backpacking or Scheduled trips?
-    <br>
-<input type="radio" name="daynight"> Backpacking
-<br>
-<input type="radio" name="daynight"> Scheduled
-</label>
+<input type="radio" id="scheduled" name="triptype" value="Scheduled">
+<label for="scheduled" >Scheduled</label>
+
 <br>
 <br>
 <label for="activities">
