@@ -3,37 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hiker Gang Survey Form</title>
+    <title>Hiker Gang||Register</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <h1 id="title">HIKER GANG HIKING TEAMS</h1>
 
-    <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora laudantium saepe quia. Quisquam blanditiis doloribus id excepturi, libero qui iste!</p>
+
+<body>
+    <header><h1>Hike Team </h1></header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+           <li class="dropdown">
+            <a href="">Duration Preference</a>
+            <div class="dropdown-content">
+                <a href="duration.html">Day Trip</a>
+                <a href="duration.html">Overnight Trip</a>
+                <a href="duration.html">Week-long Trip</a>
+            </div>
+           </li>
+            <li class="dropdown">
+                <a href="">Adventures</a>
+                <div class="dropdown-content">
+                    <a href="upcoming.html">Upcoming Adventures</a>
+                    <a href="recaps.html">Trip Recaps</a>
+                </div>
+            </li>
+            <li><a href="#album">Album</a>
+
+            <li class="dropdown">
+                 <a href="">Maps</a>
+                 <div class="dropdown-content">
+                    <a href="countrymap.html">Maps By County</a>
+                    <a href="datemap.html">Maps By Date</a>
+                 </div>
+                </li>
+            
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="register.html">Join Us</a></li>
+        <li><a href="members.html"> Members area</a></li>
+        </ul>
+    </nav>
+
+
+    <section>
+        <h4>About Hiker Gang</h4>
+        <p id="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora laudantium saepe quia. Quisquam blanditiis doloribus id excepturi, libero qui iste!</p>
+    </section>
+    
+<section>
+    <h4>Tell us more about yourself:</h4>
 
     <form id="survey-form" action="" method="post" autocomplete="on" target="_self"> 
 
     <label for="fname">First Name: </label><br>
-        <input id="fname" type="text" x placeholder="e.g. John" name="fname" required>
+        <input id="fname" type="text" placeholder="e.g. John" name="fname" required>
     <br>
     <br>
-    <label for="lname">Last Name: </label>
+    <label for="lname">Last Name: </label><br>
         <input id="lname" type="text" x placeholder="e.g. Doe" name="lname" required>
     <br>
     <br>
-    <label for="email">Enter your email:</label>
+    <label for="country">Country:</label><br>
+         <input id="country" type="text" name="country" required placeholder="Kenya">
+         <br><br>
+
+    <label for="age">What is your age? </label><br>
+         <input id="age" type="number" name="age" max="75" min="15" placeholder="18">
+   <br>
+   <br>
+    <label for="email">Enter your email:</label><br>
          <input id="email" type="email" name="email" required placeholder="johndoe@email.com">
     
     <br>
     <br>
-    <label for="age">What is your age? </label>
-         <input id="age" type="number" name="age" max="75" min="15" placeholder="18">
+    <hr>
     
-   <br>
-   <br>
-    <label for="budget">What budget range would best suit you?</label>
-    <br>
-    <br>
+    <h3>What budget range would best suit you?</h3>
+    
        <select id="budget" name="budget"> 
             <option>Please select one</option>
             <option>2000 - 5000</option>
@@ -42,8 +91,6 @@
             <option>15000-25000</option>
             <option>25000-60000</option>
         </select>
-
-
 
 <h3>Do you prefer day trips or Overnight trips?</h3>
     
@@ -92,6 +139,30 @@
 <input type="submit" value="Submit">
 <input type="reset" value="Reset" >
     </form>
-    
+</section>
+
+    <br>
+    <section>
+        <a href="mailto:me@hotmail.com">Complaints Email</a> 
+    </section>
+    <section>
+    <article class="feedback">
+        <h2>John Doe</h2>
+        <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+      </article>
+      <article class="feedback">
+        <h2>Jane Doe</h2>
+        <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+      </article>
+    </section>
+    <footer>
+        <p>claudiahW</p>
+        <p>Copyright © 2024</p>
+    </footer>
+ 
+<script src="scripts.js"></script>
 </body>
 </html>
+
+
+
